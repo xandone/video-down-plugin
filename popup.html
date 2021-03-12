@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>popup</title>
+    <style type="text/css">
+    #down-btn {
+        margin: 10px 0;
+    }
+
+    #video-url-text {
+        text-align: left;
+        width: 100%;
+        height: 40px;
+        line-height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    </style>
+</head>
+
+<body style="width: 300px; min-height: 100px;">
+    <div>
+        <span>视频地址：</span>
+        <div>
+            <a id="video-url" href="#" target="_blank"><span id="video-url-text"></span></a>
+        </div>
+    </div>
+    <div>
+        <button id="down-btn" type="button">下载</button>
+    </div>
+    <script type="text/javascript" src="js/inject.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "video-down",
+    "version": "1.0",
+    "description": "下载部分网络视频的插件",
+    "author": "xandone",
+    "icons":
+    {
+        "48": "img/icon.png",
+        "128": "img/icon.png"
+    },
+    "browser_action":
+    {
+        "default_icon": "img/icon.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+    {
+        // "<all_urls>" 表示匹配所有地址
+        "matches": ["<all_urls>"],
+        "js": ["js/content-script.js"]
+    }],
+    // 权限申请
+    "permissions": [
+        "tabs", // 标签
+        "http://*/*", // 可以通过executeScript或者insertCSS访问的网站
+        "https://*/*" // 可以通过executeScript或者insertCSS访问的网站
+    ],
+    "web_accessible_resources": [
+        "inject.js"
+    ]
+}
