@@ -23,7 +23,7 @@ function sendMessage() {
         document.getElementById('video-url').href = response;
         document.getElementById('down-btn-a').href = response;
         //启用浏览器自带下载功能
-        document.getElementById('down-btn-a').download = 'proposed_file_name';
+        document.getElementById('down-btn-a').download="";
     });
 }
 
